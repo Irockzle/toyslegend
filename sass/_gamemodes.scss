@@ -1,0 +1,98 @@
+@use "global" as *;
+
+/*-------------Game Modes-------------*/
+.gamemodes {
+  min-height: 100vh;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  //background-image: linear-gradient(to right, #ad7e9480, #cd9cb280),
+  background-image: linear-gradient(350deg, #81a0d180, #4a659280),
+    url("../img/pattern.jpg");
+  background-repeat: repeat;
+}
+
+.gamemodes__grid {
+  margin: 0 auto;
+}
+
+.gamemodes__title,
+.gamemodes__subtitle {
+  text-align: center;
+}
+
+.gamemodes__cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.gamemodes__card {
+  display: flex;
+  width: 350px;
+  background-image: linear-gradient(
+    350deg,
+    rgba(17, 34, 79, 0.4) 0%,
+    rgba(29, 69, 120, 0.4) 100%
+  );
+  box-shadow: 4px 4px 20px #00000025;
+  border-radius: 15px;
+  transition: all 0.3s;
+  padding: 20px;
+  cursor: pointer;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+.gamemodes__card:hover {
+  margin-top: -20px;
+  box-shadow: 4px 4px 80px #ffffff11;
+  transform: rotate(1.5deg);
+}
+
+.gamemodes__card-img {
+  position: relative;
+  height: 190px;
+  margin-bottom: 20px;
+
+  img {
+    width: 190px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 0.3s;
+  }
+  :hover {
+    transform: scale(105%);
+  }
+}
+
+.gamemodes__card-title,
+.gamemodes__card-text {
+  text-align: center;
+}
+
+.gamemodes__card-content .btn-one {
+  margin-bottom: 15px;
+  display: block;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    325deg,
+    #5873a1 0%,
+    #405983 55%,
+    #5873a1 90%
+  );
+}
+
+@media screen and (max-width: 768px) {
+  .gamemodes__card {
+    width: 300px;
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+}

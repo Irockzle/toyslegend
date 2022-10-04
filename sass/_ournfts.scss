@@ -1,0 +1,219 @@
+@use "global" as *;
+
+/*-------------Our Nfts-------------*/
+.ournfts {
+  min-height: 100vh;
+  padding: 80px 0;
+  background-color: #69b5fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(350deg, #97989a80, #5e5f6180),
+    url("../img/pattern.jpg");
+  background-repeat: repeat;
+}
+
+.ournfts__grid {
+}
+
+.ournfts__tabs {
+  width: 100%;
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ournfts__tabs-container {
+  position: relative;
+  height: 450px;
+}
+
+.ournfts__tabs-wrapper {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 600ms, visibility 600ms;
+}
+
+.ournfts__tabs-wrapper.active-tab {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ournfts__tab {
+  position: absolute;
+  padding: 15px;
+  //margin: 10px;
+  // display: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*  border-radius: 15px;
+  background-color: #8383833b;
+  box-shadow: 0px 4px 15px #00000023;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px); */
+}
+
+.ournfts__tab.active-tab {
+  display: grid;
+  align-items: center;
+}
+
+.ournfts__tab-img img {
+  width: 400px;
+}
+
+.ournfts__tab-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ournfts__tabs-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+}
+
+.ournfts__icon {
+  width: 80px;
+  height: 80px;
+  background-color: #0893e4;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: center;
+  border: solid 2px;
+  border-color: #ffffff;
+  box-shadow: 0 3px 10px #00000054;
+}
+
+.ournfts__icon:hover {
+  background-size: 115%;
+  box-shadow: 0 3px 80px #ffffff71;
+}
+
+.ournfts__tab-img {
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(120%);
+    cursor: pointer;
+  }
+}
+
+.ournfts__icon.character {
+  background-image: url(../img/ico-character.png);
+}
+.ournfts__icon.skins {
+  background-image: url(../img/ico-skins.png);
+}
+.ournfts__icon.weapons {
+  background-image: url(../img/ico-weapon.png);
+}
+.ournfts__icon.cards {
+  background-image: url(../img/ico-card.png);
+}
+.ournfts__icon.lands {
+  background-image: url(../img/ico-land.png);
+}
+.ournfts__icon.establishments {
+  background-image: url(../img/ico-battery.png);
+}
+
+.ournfts__icon.active-tab {
+  width: 95px;
+  height: 95px;
+  background-color: #e4b108;
+  border: solid 5px;
+  border-color: #ffc640e8;
+}
+.ournfts__icon.active-tab:hover {
+  background-size: 105%;
+}
+
+.ournfts__tab-info .btn-one {
+  background-image: linear-gradient(
+    325deg,
+    #ffc640 0%,
+    #f7b315 55%,
+    #ffc640 90%
+  );
+}
+
+@media screen and (max-width: 1024px) {
+  .ournfts__tab {
+    grid-template-columns: 1fr;
+    padding: 15px;
+    justify-items: center;
+  }
+  .ournfts__tabs {
+    padding: 0;
+    margin: 0;
+    flex-direction: column-reverse;
+  }
+  .ournfts__tabs-container {
+    height: 580px;
+  }
+  .ournfts__tab-img img {
+    width: 300px;
+  }
+
+  .ournfts__tab-info {
+    align-items: center;
+    p {
+      text-align: center;
+    }
+  }
+
+  .ournfts__tab-img {
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ournfts__tabs-icons {
+    gap: 10px;
+  }
+  .ournfts__icon {
+    width: 60px;
+    height: 60px;
+  }
+  .ournfts__icon.active-tab {
+    width: 70px;
+    height: 70px;
+  }
+  .ournfts__tab-img img {
+    width: 250px;
+  }
+  .ournfts__tabs-container {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ournfts__tabs-icons {
+    gap: 8px;
+  }
+  .ournfts__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .ournfts__icon.active-tab {
+    width: 50px;
+    height: 50px;
+  }
+  .ournfts__tabs-container {
+    height: 530px;
+  }
+  .ournfts__tab-img img {
+    width: 180px;
+  }
+}

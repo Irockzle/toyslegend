@@ -1,0 +1,87 @@
+@use "global" as *;
+
+/*-------------TheGame-------------*/
+.thegame {
+  min-height: 100vh;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(350deg, #d5b78180, #bd9c6480),
+    url("../img/pattern.jpg");
+  background-repeat: repeat;
+}
+
+.thegame_grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.thegame_1 {
+}
+
+.thegame_title {
+}
+
+.thegame_subtitle {
+}
+
+.thegame_text {
+}
+
+.thegame_1 {
+  .btn-one {
+    background-image: linear-gradient(
+      325deg,
+      #ffc640 0%,
+      #f7b315 55%,
+      #ffc640 90%
+    );
+  }
+}
+
+.thegame_2 {
+  padding-left: 10%;
+  .thegame_img {
+    width: 100%;
+    transition: all 0.3s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(105%);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .thegame_grid {
+    min-height: 50vh;
+    padding: 50px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .thegame_1 {
+    text-align: center;
+  }
+
+  .thegame_2 {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    .thegame_img {
+      width: 80%;
+      padding-top: 30px;
+    }
+  }
+  .thegame_title {
+  }
+
+  .thegame_subtitle {
+  }
+
+  .thegame_text {
+  }
+}

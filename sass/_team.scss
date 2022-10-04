@@ -1,0 +1,144 @@
+@use "global" as *;
+
+/*-------------Team-------------*/
+.team {
+  min-height: 100vh;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(350deg, #97989a80, #5e5f6180),
+    url("../img/pattern.jpg");
+  background-repeat: repeat;
+}
+
+.team__grid {
+  margin: 0 auto;
+}
+
+.team__cards-container {
+  width: 100%;
+  padding: 40px 0 60px 0;
+}
+
+.team__slide-content {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.team__card-wrapper {
+}
+
+.team__card {
+}
+
+.team__card-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 290px;
+  height: 440px;
+  padding: 30px 15px;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    350deg,
+    rgba(43, 43, 43, 0.7) 0%,
+    rgba(82, 82, 82, 0.7) 100%
+  );
+  border-radius: 15px;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+
+  &:hover {
+    background-image: linear-gradient(
+      350deg,
+      rgba(43, 43, 43, 0.808) 0%,
+      rgba(82, 82, 82, 0.788) 100%
+    );
+  }
+}
+
+.team__card-img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 30px #0000005b;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 4px 4px 40px #00000079;
+    transform: scale(105%);
+  }
+}
+
+.team__card-name {
+  font-size: 23px;
+  line-height: 23px;
+  margin-bottom: -45px;
+  text-align: center;
+  color: $color-primary;
+}
+
+.team__card-category {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: -15px;
+  color: $color-white;
+}
+
+.team__card-description {
+  text-transform: capitalize;
+}
+
+.team__card-socials {
+}
+// Profile Imgs
+.tc__ivan-p {
+  background-image: url(../img/team/ivan-perdomo.jpg);
+}
+.tc__junior-v {
+  background-image: url(../img/team/junior-vargas.jpg);
+}
+.tc__enrique-m {
+  background-image: url(../img/team/enrique-mora.jpg);
+}
+.tc__andres-s {
+  background-image: url(../img/team/andres-sandoval.jpg);
+}
+.tc__joseph-r {
+  background-image: url(../img/team/joseph-robles.jpg);
+}
+.tc__jake-a {
+  background-image: url(../img/team/jake-alvarez.jpg);
+}
+.tc__cesar-m {
+  background-image: url(../img/team/cesar-mongelos.jpg);
+}
+.tc__abraham-m {
+  background-image: url(../img/team/abraham-martinez.jpg);
+}
+.tc__cristian-m {
+  background-image: url(../img/team/cristian-marin.jpg);
+}
+
+//swiper
+
+.swiper-pagination-bullet {
+  background-color: $color-primary;
+  opacity: 0.7;
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-pagination-bullet-active {
+  border: solid 2px;
+  border-color: #fff;
+  background-color: $color-primary;
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
