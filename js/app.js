@@ -1,14 +1,14 @@
 //Modal Comic
-/* const comicModalClose = document.querySelector(".modal__comic-close");
+const comicModalClose = document.querySelector(".modal__comic-close");
 const modalContainerComic = document.querySelector(".modal__comic");
 
 comicModalClose.addEventListener("click", (e) => {
   e.preventDefault();
   modalContainerComic.classList.add("modal__comic--hide");
-}); */
+});
 
 //Modal Promo Presale
-/* const presalepricesModalOpen = document.querySelectorAll(
+const presalepricesModalOpen = document.querySelectorAll(
   ".presaleprices__modal-open"
 );
 const presalepricesModalClose = document.querySelector(
@@ -32,10 +32,10 @@ presalepricesModalClose.addEventListener("click", (e) => {
   modalContainerPresaleprices.classList.remove(
     "modal__container-presaleprices--show"
   );
-}); */
+});
 
 //Modal Promo Presale
-/* const presalepromoModalOpen = document.querySelectorAll(
+const presalepromoModalOpen = document.querySelectorAll(
   ".presalepromo__modal-open"
 );
 const presalepromoModalClose = document.querySelector(
@@ -59,10 +59,10 @@ presalepromoModalClose.addEventListener("click", (e) => {
   modalContainerPresalepromo.classList.remove(
     "modal__container-presalepromo--show"
   );
-}); */
+});
 
 //Modal Documents
-/* const documentsModalOpen = document.querySelectorAll(".documents__modal-open");
+const documentsModalOpen = document.querySelectorAll(".documents__modal-open");
 const documentsModalClose = document.querySelector(".modal__documents-close");
 const modalContainerDocuments = document.querySelector(
   ".modal__container-documents"
@@ -78,7 +78,7 @@ documentsModalOpen.forEach((btn) => {
 documentsModalClose.addEventListener("click", (e) => {
   e.preventDefault();
   modalContainerDocuments.classList.remove("modal__container-documents--show");
-}); */
+});
 
 //Modal Game Play
 const gameplayModalOpen = document.querySelectorAll(".gameplay__modal-open");
@@ -166,13 +166,13 @@ function setHandleMenuItemClickOnMobile() {
 setHandleMenuItemClickOnMobile();
 
 //Modal Presale (Count)
-/* const presaleModalIcon = document.querySelector(".modal__presale-close");
+const presaleModalIcon = document.querySelector(".modal__presale-close");
 const presaleModalCount = document.querySelector(".modal__presale");
 
 presaleModalIcon.addEventListener("click", (e) => {
   e.preventDefault();
   presaleModalCount.classList.add("modal__presale--hide");
-}); */
+});
 
 //Our Nfts Tabs
 const icon = document.querySelectorAll(".ournfts__icon");
@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
   loadNow(3);
 });
 
-/* //Countdown
+//Countdown
 function initCountDown(deadline, elementId) {
   function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
@@ -340,4 +340,4 @@ function initCountDown(deadline, elementId) {
 }
 
 //initCountDown("June 26 2022 06:00:00 UTC", "clockdiv1");
-initCountDown("July 05 2022 00:00:00 UTC", "clockdiv2"); */
+initCountDown("March 01 2024 00:00:00 UTC", "clockdiv2");
