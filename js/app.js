@@ -1,4 +1,4 @@
-//Modal Comic
+//ModalComic
 const comicModalClose = document.querySelector(".modal__comic-close");
 const modalContainerComic = document.querySelector(".modal__comic");
 
